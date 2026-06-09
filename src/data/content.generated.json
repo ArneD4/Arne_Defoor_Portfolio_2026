@@ -1,0 +1,441 @@
+{
+  "brand": {
+    "name": "Portfolio",
+    "copy": "Built with React, Vite, and a Google Sheets content workflow."
+  },
+  "home": {
+    "subtitle": "Selected work",
+    "heading": "Designing interfaces, visuals, and digital experiences.",
+    "description": "This starter uses your sheet rows to populate the portfolio pages automatically.",
+    "heroImage": "https://d4dev.be/Images/Skors_Thumbnail_2.png"
+  },
+  "about": {
+    "heading": "About me",
+    "headline": "Digital designer & developer",
+    "focus": "Crafting thoughtful brands, interfaces, and interactive digital experiences.",
+    "tools": [
+      "React",
+      "Three.js",
+      "GSAP",
+      "Figma"
+    ],
+    "description": "I create digital products and visual identities that bring ideas to life across web and print.",
+    "points": [
+      {
+        "title": "Content-driven",
+        "text": "A shared sheet keeps your copy and images aligned across design and development."
+      },
+      {
+        "title": "Responsive by default",
+        "text": "The portfolio layouts scale from mobile to desktop without duplicating the content model."
+      },
+      {
+        "title": "Ready for 3D",
+        "text": "The structure is already prepared for adding richer interactive experiences later."
+      }
+    ]
+  },
+  "projects": [
+    {
+      "slug": "skors",
+      "title": "Skors",
+      "category": "Digital Products",
+      "summary": "Creating a technical identity for tree care. High-performance site with optimized lead conversion.",
+      "role": "Web Designer & Developer",
+      "year": "2025",
+      "link": "https://skors.be/",
+      "tools": [
+        "React",
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "images": [
+        "https://d4dev.be/Images/Skors_img_1.png",
+        "https://d4dev.be/Images/Skors_img_2.png",
+        "https://d4dev.be/Images/Skors_img_3.png?v=2"
+      ],
+      "cardImage": "https://d4dev.be/Images/Skors_Thumbnail.png",
+      "coverImage": "https://d4dev.be/Images/Skors_Thumbnail_2.png",
+      "sections": [
+        {
+          "title": "Overview",
+          "content": "Creating a technical identity for tree care. High-performance site with optimized lead conversion."
+        },
+        {
+          "title": "Role",
+          "content": "Web Designer & Developer"
+        },
+        {
+          "title": "Year",
+          "content": "2025"
+        },
+        {
+          "title": "Project link",
+          "content": "https://skors.be/"
+        }
+      ]
+    },
+    {
+      "slug": "mytalentbuilder",
+      "title": "MyTalentBuilder",
+      "category": "Digital Products",
+      "summary": "Need for a clean, local service landing page. Minimalist UI with clear call-to-actions for services.",
+      "role": "UX/UI Designer",
+      "year": "2025",
+      "link": "https://www.mytalentbuilder.com/en",
+      "tools": [
+        "Figma"
+      ],
+      "images": [
+        "https://d4dev.be/Images/MTB_img_1.png",
+        "https://d4dev.be/Images/MTB_img_2.png",
+        "https://d4dev.be/Images/MTB_img_3.png"
+      ],
+      "cardImage": "https://d4dev.be/Images/MTB_Thumbnail.png",
+      "coverImage": "https://d4dev.be/Images/MTB_Thumbnail_2.png",
+      "sections": [
+        {
+          "title": "Overview",
+          "content": "Need for a clean, local service landing page. Minimalist UI with clear call-to-actions for services."
+        },
+        {
+          "title": "Role",
+          "content": "UX/UI Designer"
+        },
+        {
+          "title": "Year",
+          "content": "2025"
+        },
+        {
+          "title": "Project link",
+          "content": "https://www.mytalentbuilder.com/en"
+        }
+      ]
+    },
+    {
+      "slug": "d4dev",
+      "title": "D4Dev",
+      "category": "Digital Products",
+      "summary": "Showcase website for development projects",
+      "role": "Web Designer & Developer",
+      "year": "2026",
+      "link": "https://rootsandchalice.be/jamaica/",
+      "tools": [
+        "React",
+        "Three.js",
+        "GSAP",
+        "PHP"
+      ],
+      "images": [
+        "https://d4dev.be/Images/D4Dev_img_1.png",
+        "https://d4dev.be/Images/D4Dev_img_2.png",
+        "https://d4dev.be/Images/D4Dev_img_3.png"
+      ],
+      "cardImage": "https://d4dev.be/Images/D4Dev_Thumbnail.png",
+      "coverImage": "https://d4dev.be/Images/D4Dev_Thumbnail_2.png",
+      "sections": [
+        {
+          "title": "Overview",
+          "content": "Showcase website for development projects"
+        },
+        {
+          "title": "Role",
+          "content": "Web Designer & Developer"
+        },
+        {
+          "title": "Year",
+          "content": "2026"
+        },
+        {
+          "title": "Project link",
+          "content": "https://rootsandchalice.be/jamaica/"
+        }
+      ]
+    },
+    {
+      "slug": "lavadub",
+      "title": "LavaDub",
+      "category": "Brand & Visuals",
+      "summary": "90s inspired poster design for Dub event",
+      "role": "Digital & Graphic Designer",
+      "year": "2018-2019",
+      "link": "",
+      "tools": [
+        "Photoshop",
+        "Illustrator",
+        "Indesign",
+        "Figma"
+      ],
+      "images": [
+        "https://d4dev.be/Images/Lavadub_img_1.png",
+        "https://d4dev.be/Images/Lavadub_img_2.png",
+        "https://d4dev.be/Images/Lavadub_img_3.png"
+      ],
+      "cardImage": "https://d4dev.be/Images/Lavadub_Thumbnail.png",
+      "coverImage": "https://d4dev.be/Images/Lavadub_Thumbnail_2.png",
+      "sections": [
+        {
+          "title": "Overview",
+          "content": "90s inspired poster design for Dub event"
+        },
+        {
+          "title": "Role",
+          "content": "Digital & Graphic Designer"
+        },
+        {
+          "title": "Year",
+          "content": "2018-2019"
+        },
+        {
+          "title": "Project link",
+          "content": "Link coming soon."
+        }
+      ]
+    },
+    {
+      "slug": "jamrock",
+      "title": "Jamrock",
+      "category": "Brand & Visuals",
+      "summary": "Block letter style poster design for dance",
+      "role": "Digital & Graphic Designer",
+      "year": "2019-2020",
+      "link": "",
+      "tools": [
+        "Photoshop",
+        "Illustrator",
+        "Indesign",
+        "Figma"
+      ],
+      "images": [
+        "https://d4dev.be/Images/Jamrock_img_1.png",
+        "https://d4dev.be/Images/Jamrock_img_2.png",
+        "https://d4dev.be/Images/Jamrock_img_3.png"
+      ],
+      "cardImage": "https://d4dev.be/Images/Jamrock_Thumbnail.png",
+      "coverImage": "https://d4dev.be/Images/Jamrock_Thumbnail_2.png",
+      "sections": [
+        {
+          "title": "Overview",
+          "content": "Block letter style poster design for dance"
+        },
+        {
+          "title": "Role",
+          "content": "Digital & Graphic Designer"
+        },
+        {
+          "title": "Year",
+          "content": "2019-2020"
+        },
+        {
+          "title": "Project link",
+          "content": "Link coming soon."
+        }
+      ]
+    },
+    {
+      "slug": "stand-tall",
+      "title": "Stand Tall",
+      "category": "Brand & Visuals",
+      "summary": "Artwork for event at STUK",
+      "role": "Digital & Graphic Designer",
+      "year": "2018-2019",
+      "link": "",
+      "tools": [
+        "Photoshop",
+        "Illustrator",
+        "Indesign",
+        "Figma"
+      ],
+      "images": [
+        "https://d4dev.be/Images/Standtall_img_1.png",
+        "https://d4dev.be/Images/Standtall_img_2.png",
+        "https://d4dev.be/Images/Standtall_img_3.png"
+      ],
+      "cardImage": "https://d4dev.be/Images/Standtall_Thumbnail.png",
+      "coverImage": "https://d4dev.be/Images/Standtall_Thumbnail_2.png",
+      "sections": [
+        {
+          "title": "Overview",
+          "content": "Artwork for event at STUK"
+        },
+        {
+          "title": "Role",
+          "content": "Digital & Graphic Designer"
+        },
+        {
+          "title": "Year",
+          "content": "2018-2019"
+        },
+        {
+          "title": "Project link",
+          "content": "Link coming soon."
+        }
+      ]
+    },
+    {
+      "slug": "digital-illustrations",
+      "title": "Digital Illustrations",
+      "category": "Fine Art",
+      "summary": "A collection of digital illustrations",
+      "role": "Digital Artist",
+      "year": "2023",
+      "link": "",
+      "tools": [
+        "Wacom",
+        "Photoshop",
+        "Illustrator"
+      ],
+      "images": [
+        "https://d4dev.be/Images/Digital_img_1.png",
+        "https://d4dev.be/Images/Digital_img_2.png",
+        "https://d4dev.be/Images/Digital_img_3.png",
+        "https://d4dev.be/Images/Digital_img_4.png",
+        "https://d4dev.be/Images/Digital_img_5.png"
+      ],
+      "cardImage": "https://d4dev.be/Images/Digital_Thumbnail.png",
+      "coverImage": "https://d4dev.be/Images/Digital_Thumbnail_2.png",
+      "sections": [
+        {
+          "title": "Overview",
+          "content": "A collection of digital illustrations"
+        },
+        {
+          "title": "Role",
+          "content": "Digital Artist"
+        },
+        {
+          "title": "Year",
+          "content": "2023"
+        },
+        {
+          "title": "Project link",
+          "content": "Link coming soon."
+        }
+      ]
+    },
+    {
+      "slug": "watercolor",
+      "title": "Watercolor",
+      "category": "Fine Art",
+      "summary": "A collection of water paintings",
+      "role": "Painter",
+      "year": "2024",
+      "link": "",
+      "tools": [
+        "Brushes",
+        "Watercolor",
+        "Paper"
+      ],
+      "images": [
+        "https://d4dev.be/Images/Watercolor_img_1.png",
+        "https://d4dev.be/Images/Watercolor_img_2.png",
+        "https://d4dev.be/Images/Watercolor_img_3.png",
+        "https://d4dev.be/Images/Watercolor_img_4.png",
+        "https://d4dev.be/Images/Watercolor_img_5.png"
+      ],
+      "cardImage": "https://d4dev.be/Images/Watercolor_Thumbnail.png",
+      "coverImage": "https://d4dev.be/Images/Watercolor_Thumbnail_2.png",
+      "sections": [
+        {
+          "title": "Overview",
+          "content": "A collection of water paintings"
+        },
+        {
+          "title": "Role",
+          "content": "Painter"
+        },
+        {
+          "title": "Year",
+          "content": "2024"
+        },
+        {
+          "title": "Project link",
+          "content": "Link coming soon."
+        }
+      ]
+    },
+    {
+      "slug": "paintings",
+      "title": "Paintings",
+      "category": "Fine Art",
+      "summary": "A collection of Acrylic Painings",
+      "role": "Painter",
+      "year": "2025",
+      "link": "",
+      "tools": [
+        "Brushes",
+        "Acrylics",
+        "Canvas"
+      ],
+      "images": [
+        "https://d4dev.be/Images/Painting_img_1.png",
+        "https://d4dev.be/Images/Painting_img_2.png",
+        "https://d4dev.be/Images/Painting_img_3.png",
+        "https://d4dev.be/Images/Painting_img_4.png",
+        "https://d4dev.be/Images/Painting_img_5.png"
+      ],
+      "cardImage": "https://d4dev.be/Images/Painting_Thumbnail.png",
+      "coverImage": "https://d4dev.be/Images/Painting_Thumbnail_2.png",
+      "sections": [
+        {
+          "title": "Overview",
+          "content": "A collection of Acrylic Painings"
+        },
+        {
+          "title": "Role",
+          "content": "Painter"
+        },
+        {
+          "title": "Year",
+          "content": "2025"
+        },
+        {
+          "title": "Project link",
+          "content": "Link coming soon."
+        }
+      ]
+    },
+    {
+      "slug": "graphic-novel",
+      "title": "Graphic Novel",
+      "category": "Fine Art",
+      "summary": "A Graphic Novel about Halong Bay",
+      "role": "Graphic Novelist",
+      "year": "",
+      "link": "",
+      "tools": [
+        "Sketches",
+        "Digital Coloring",
+        "Pen",
+        "Paper"
+      ],
+      "images": [
+        "https://d4dev.be/Images/Halong_img_1.png",
+        "https://d4dev.be/Images/Halong_img_2.png",
+        "https://d4dev.be/Images/Halong_img_3.png",
+        "https://d4dev.be/Images/Halong_img_4.png"
+      ],
+      "cardImage": "https://d4dev.be/Images/Halong_Thumbnail.png",
+      "coverImage": "https://d4dev.be/Images/Halong_Thumbnail_2.png",
+      "sections": [
+        {
+          "title": "Overview",
+          "content": "A Graphic Novel about Halong Bay"
+        },
+        {
+          "title": "Role",
+          "content": "Graphic Novelist"
+        },
+        {
+          "title": "Year",
+          "content": ""
+        },
+        {
+          "title": "Project link",
+          "content": "Link coming soon."
+        }
+      ]
+    }
+  ]
+}
