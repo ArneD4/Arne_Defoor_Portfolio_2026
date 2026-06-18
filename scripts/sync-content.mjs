@@ -8,6 +8,9 @@ const projectRoot = path.resolve(__dirname, '..');
 const sourceArg = process.argv[2];
 const csvSource = sourceArg || process.env.PORTFOLIO_CSV_PATH || process.env.PORTFOLIO_CSV_URL || path.resolve(projectRoot, 'src/data/Portfolio_CMS - Projects.csv');
 const outputPath = path.resolve(projectRoot, 'src/data/content.generated.json');
+const aboutCsvPath = path.resolve(projectRoot, 'src/data/Portfolio_CMS - About Me.csv');
+const educationCsvPath = path.resolve(projectRoot, 'src/data/Portfolio_CMS - Education.csv');
+const workExperienceCsvPath = path.resolve(projectRoot, 'src/data/Portfolio_CMS - Work Experience.csv');
 
 function slugify(value) {
   return value
@@ -132,22 +135,81 @@ function toProject(row) {
   };
 }
 
-async function main() {
-  const csvText = await loadCsvText(csvSource);
+function parseRecordsFromCsv(csvText) {
   const rows = parseCsv(csvText);
 
   if (rows.length < 2) {
-    throw new Error('No data rows could be parsed from the CSV source.');
+    return [];
   }
 
   const [headers, ...records] = rows;
   const normalizedHeaders = headers.map((header) => header.trim());
-  const projects = records
-    .map((record) => {
-      const row = Object.fromEntries(normalizedHeaders.map((header, index) => [header, record[index] ?? '']));
-      return toProject(row);
-    })
+
+  return records.map((record) => Object.fromEntries(normalizedHeaders.map((header, index) => [header, record[index] ?? ''])));
+}
+
+function toAbout(row) {
+  const tools = [row['Tool 1'], row['Tool 2'], row['Tool 3'], row['Tool 4'], row['Tool 5']]
+    .filter(Boolean)
+    .map((tool) => tool.trim());
+
+  return {
+    headline: row['Headline']?.trim() || 'Digital designer & developer',
+    focus: row['Focus']?.trim() || 'Crafting thoughtful brands, interfaces, and interactive digital experiences.',
+    description: row['Main Bio']?.trim() || 'I create digital products and visual identities that bring ideas to life across web and print.',
+    tools,
+  };
+}
+
+function toEducation(row) {
+  return {
+    institution: row['Institution']?.trim() || '',
+    degree: row['Degree']?.trim() || '',
+    focus: row['Focus']?.trim() || '',
+    years: row['Years']?.trim() || '',
+    institutionUrl: row['Institution URL']?.trim() || '',
+  };
+}
+
+function toWorkExperience(row) {
+  return {
+    company: row['Company']?.trim() || '',
+    role: row['Role']?.trim() || '',
+    focus: row['Focus']?.trim() || '',
+    years: row['Years']?.trim() || '',
+    companyUrl: row['Company URL']?.trim() || '',
+  };
+}
+
+async function main() {
+  const csvText = await loadCsvText(csvSource);
+  const projectRows = parseRecordsFromCsv(csvText);
+
+  if (projectRows.length < 1) {
+    throw new Error('No project data rows could be parsed from the CSV source.');
+  }
+
+  const aboutCsvText = fs.readFileSync(aboutCsvPath, 'utf8');
+  const educationCsvText = fs.readFileSync(educationCsvPath, 'utf8');
+  const workExperienceCsvText = fs.readFileSync(workExperienceCsvPath, 'utf8');
+
+  const aboutRows = parseRecordsFromCsv(aboutCsvText);
+  const educationRows = parseRecordsFromCsv(educationCsvText);
+  const workExperienceRows = parseRecordsFromCsv(workExperienceCsvText);
+
+  const about = aboutRows[0] ? toAbout(aboutRows[0]) : {
+    headline: 'Digital designer & developer',
+    focus: 'Crafting thoughtful brands, interfaces, and interactive digital experiences.',
+    description: 'I create digital products and visual identities that bring ideas to life across web and print.',
+    tools: ['React', 'Three.js', 'GSAP', 'Figma'],
+  };
+
+  const projects = projectRows
+    .map((record) => toProject(record))
     .filter((project) => project.title);
+
+  const education = educationRows.map(toEducation).filter((item) => item.institution);
+  const workExperience = workExperienceRows.map(toWorkExperience).filter((item) => item.company);
 
   const content = {
     brand: {
@@ -156,30 +218,19 @@ async function main() {
     },
     home: {
       subtitle: 'Selected work',
-      heading: 'Designing interfaces, visuals, and digital experiences.',
-      description: 'This starter uses your sheet rows to populate the portfolio pages automatically.',
+      heading: about.headline,
+      description: about.focus,
       heroImage: projects[0]?.coverImage || 'https://via.placeholder.com/640x480?text=Hero+Image',
     },
     about: {
       heading: 'About me',
-      headline: 'Digital designer & developer',
-      focus: 'Crafting thoughtful brands, interfaces, and interactive digital experiences.',
-      tools: ['React', 'Three.js', 'GSAP', 'Figma'],
-      description: 'I create digital products and visual identities that bring ideas to life across web and print.',
-      points: [
-        {
-          title: 'Content-driven',
-          text: 'A shared sheet keeps your copy and images aligned across design and development.',
-        },
-        {
-          title: 'Responsive by default',
-          text: 'The portfolio layouts scale from mobile to desktop without duplicating the content model.',
-        },
-        {
-          title: 'Ready for 3D',
-          text: 'The structure is already prepared for adding richer interactive experiences later.',
-        },
-      ],
+      headline: about.headline,
+      focus: about.focus,
+      tools: about.tools,
+      description: about.description,
+      education,
+      workExperience,
+      points: [],
     },
     projects,
   };

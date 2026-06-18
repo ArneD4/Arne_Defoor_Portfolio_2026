@@ -37,7 +37,9 @@ type ContentData = {
     focus?: string;
     tools?: string[];
     description: string;
-    points: Array<{ title: string; text: string }>;
+    points?: Array<{ title: string; text: string }>;
+    education?: Array<{ institution: string; degree: string; focus: string; years: string; institutionUrl?: string }>;
+    workExperience?: Array<{ company: string; role: string; focus: string; years: string; companyUrl?: string }>;
   };
   projects: Project[];
 };

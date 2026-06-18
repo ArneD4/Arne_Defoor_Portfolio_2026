@@ -5,50 +5,97 @@
   },
   "home": {
     "subtitle": "Selected work",
-    "heading": "Designing interfaces, visuals, and digital experiences.",
-    "description": "This starter uses your sheet rows to populate the portfolio pages automatically.",
+    "heading": "Creative Developer & Designer",
+    "description": "Bridging the gap between aesthetic UX/UI design and robust technical development.",
     "heroImage": "https://d4dev.be/Images/Skors_Thumbnail_2.png"
   },
   "about": {
     "heading": "About me",
-    "headline": "Digital designer & developer",
-    "focus": "Crafting thoughtful brands, interfaces, and interactive digital experiences.",
+    "headline": "Creative Developer & Designer",
+    "focus": "Bridging the gap between aesthetic UX/UI design and robust technical development.",
     "tools": [
       "React",
-      "Three.js",
       "GSAP",
-      "Figma"
+      "Three.js",
+      "Figma AI",
+      "Github Copilot"
     ],
-    "description": "I create digital products and visual identities that bring ideas to life across web and print.",
-    "points": [
+    "description": "I am Arne Defoor, a multidisciplinary creator bridging the gap between logic and aesthetics. With a background in Graphical and Digital Media and Web & Mobile Development, I specialize in building digital products that are as performant as they are beautiful.",
+    "education": [
       {
-        "title": "Content-driven",
-        "text": "A shared sheet keeps your copy and images aligned across design and development."
+        "institution": "LUCA School of Arts",
+        "degree": "Master in Graphic Desing & Graphic Storytelling",
+        "focus": "Graphic Design, Graphic Storytelling, Illustration",
+        "years": "2013-2017",
+        "institutionUrl": "https://www.luca-arts.be/nl/beeldverhaal-campus-brussel-sint-lukas-bachelor"
       },
       {
-        "title": "Responsive by default",
-        "text": "The portfolio layouts scale from mobile to desktop without duplicating the content model."
+        "institution": "INTEC",
+        "degree": "Front End-Development",
+        "focus": "HTML, CSS, Javascript, React, PHP, MySQL",
+        "years": "2020-2012",
+        "institutionUrl": "https://www.intecbrussel.be/"
       },
       {
-        "title": "Ready for 3D",
-        "text": "The structure is already prepared for adding richer interactive experiences later."
+        "institution": "Three.js Journey",
+        "degree": "3D in Web by Bruno Simon",
+        "focus": "three.js, React Three Fiber, Blender",
+        "years": "2023",
+        "institutionUrl": "https://threejs-journey.com/"
       }
-    ]
+    ],
+    "workExperience": [
+      {
+        "company": "Crescendo Collective",
+        "role": "UX/UI & Digital Designer",
+        "focus": "Creation of top notch websites for market leaders.",
+        "years": "2025-2026",
+        "companyUrl": "https://www.crescendocollective.com/"
+      },
+      {
+        "company": "AdSomeNoise",
+        "role": "Web Designer & Developer",
+        "focus": "Developing high-end digital campaigns and interactive web experiences.",
+        "years": "2021 - 2025",
+        "companyUrl": "https://adsomenoise.com/"
+      },
+      {
+        "company": "Traject",
+        "role": "Digital & Graphic Designer",
+        "focus": "Managing brand identitie and creating complex layout designs for print and digital.",
+        "years": "2019 - 2020",
+        "companyUrl": "https://traject.be/"
+      },
+      {
+        "company": "Lannoo Graphics",
+        "role": "Graphic Designer",
+        "focus": "Designed commercial stationery products for major licensed brands including Smiley and Need for Speed.",
+        "years": "2018-2019",
+        "companyUrl": "https://www.lannoographics.com/"
+      },
+      {
+        "company": "Mobilt/Sentinel",
+        "role": "Digital & Graphic Designer",
+        "focus": "Creation of high-end digital assets for communication purposes.",
+        "years": "2018",
+        "companyUrl": "https://sentinel-lock.com/"
+      }
+    ],
+    "points": []
   },
   "projects": [
     {
       "slug": "skors",
       "title": "Skors",
-      "category": "Digital Products",
-      "summary": "Creating a technical identity for tree care. High-performance site with optimized lead conversion.",
+      "category": "01 / Digital Products",
+      "summary": "Designed a digital identity for Skros, a tree care company. The new brand system delivers a clear overview of services and streamlines client communication.",
       "role": "Web Designer & Developer",
       "year": "2025",
       "link": "https://skors.be/",
       "tools": [
         "React",
-        "HTML",
-        "CSS",
-        "JS"
+        "Github Copilot",
+        "GSAP"
       ],
       "images": [
         "https://d4dev.be/Images/Skors_img_1.png",
@@ -60,7 +107,7 @@
       "sections": [
         {
           "title": "Overview",
-          "content": "Creating a technical identity for tree care. High-performance site with optimized lead conversion."
+          "content": "Designed a digital identity for Skros, a tree care company. The new brand system delivers a clear overview of services and streamlines client communication."
         },
         {
           "title": "Role",
@@ -79,13 +126,15 @@
     {
       "slug": "mytalentbuilder",
       "title": "MyTalentBuilder",
-      "category": "Digital Products",
-      "summary": "Need for a clean, local service landing page. Minimalist UI with clear call-to-actions for services.",
-      "role": "UX/UI Designer",
+      "category": "01 / Digital Products",
+      "summary": "Redesigned the layout of MyTalentBuilder, a platform helping teams and individuals develop their unique talents. The overhaul yields a user-friendly, intuitive interface.",
+      "role": "UI Designer",
       "year": "2025",
       "link": "https://www.mytalentbuilder.com/en",
       "tools": [
-        "Figma"
+        "Figma",
+        "Google Stitch",
+        "Figma AI"
       ],
       "images": [
         "https://d4dev.be/Images/MTB_img_1.png",
@@ -97,11 +146,11 @@
       "sections": [
         {
           "title": "Overview",
-          "content": "Need for a clean, local service landing page. Minimalist UI with clear call-to-actions for services."
+          "content": "Redesigned the layout of MyTalentBuilder, a platform helping teams and individuals develop their unique talents. The overhaul yields a user-friendly, intuitive interface."
         },
         {
           "title": "Role",
-          "content": "UX/UI Designer"
+          "content": "UI Designer"
         },
         {
           "title": "Year",
@@ -116,11 +165,11 @@
     {
       "slug": "d4dev",
       "title": "D4Dev",
-      "category": "Digital Products",
-      "summary": "Showcase website for development projects",
+      "category": "01 / Digital Products",
+      "summary": "Designed and developed a personal portfolio for my web projects and dynamic experiences. The resulting site features a sleek, technical look with integrated 3D elements and animations.",
       "role": "Web Designer & Developer",
-      "year": "2026",
-      "link": "https://rootsandchalice.be/jamaica/",
+      "year": "2024",
+      "link": "https://d4dev.be/",
       "tools": [
         "React",
         "Three.js",
@@ -137,7 +186,7 @@
       "sections": [
         {
           "title": "Overview",
-          "content": "Showcase website for development projects"
+          "content": "Designed and developed a personal portfolio for my web projects and dynamic experiences. The resulting site features a sleek, technical look with integrated 3D elements and animations."
         },
         {
           "title": "Role",
@@ -145,21 +194,21 @@
         },
         {
           "title": "Year",
-          "content": "2026"
+          "content": "2024"
         },
         {
           "title": "Project link",
-          "content": "https://rootsandchalice.be/jamaica/"
+          "content": "https://d4dev.be/"
         }
       ]
     },
     {
       "slug": "lavadub",
       "title": "LavaDub",
-      "category": "Brand & Visuals",
-      "summary": "90s inspired poster design for Dub event",
-      "role": "Digital & Graphic Designer",
-      "year": "2018-2019",
+      "category": "02 / Brand & Visuals",
+      "summary": "Crafted the visual identity for a Rejoice Soundsystem music event. Serving as an ode to the 90s, the design relies on high contrast, heavy typography, and distilled graphics.",
+      "role": "Graphic Designer",
+      "year": "2026",
       "link": "",
       "tools": [
         "Photoshop",
@@ -177,15 +226,15 @@
       "sections": [
         {
           "title": "Overview",
-          "content": "90s inspired poster design for Dub event"
+          "content": "Crafted the visual identity for a Rejoice Soundsystem music event. Serving as an ode to the 90s, the design relies on high contrast, heavy typography, and distilled graphics."
         },
         {
           "title": "Role",
-          "content": "Digital & Graphic Designer"
+          "content": "Graphic Designer"
         },
         {
           "title": "Year",
-          "content": "2018-2019"
+          "content": "2026"
         },
         {
           "title": "Project link",
@@ -196,10 +245,10 @@
     {
       "slug": "jamrock",
       "title": "Jamrock",
-      "category": "Brand & Visuals",
-      "summary": "Block letter style poster design for dance",
-      "role": "Digital & Graphic Designer",
-      "year": "2019-2020",
+      "category": "02 / Brand & Visuals",
+      "summary": "Developed an event poster for Jamrock Leuven and Kingstep Soundsystem. Inspired by early dancehall prints, it features a text-heavy, blocked style in a bold duotone palette.",
+      "role": "Graphic Designer",
+      "year": "2026",
       "link": "",
       "tools": [
         "Photoshop",
@@ -217,15 +266,15 @@
       "sections": [
         {
           "title": "Overview",
-          "content": "Block letter style poster design for dance"
+          "content": "Developed an event poster for Jamrock Leuven and Kingstep Soundsystem. Inspired by early dancehall prints, it features a text-heavy, blocked style in a bold duotone palette."
         },
         {
           "title": "Role",
-          "content": "Digital & Graphic Designer"
+          "content": "Graphic Designer"
         },
         {
           "title": "Year",
-          "content": "2019-2020"
+          "content": "2026"
         },
         {
           "title": "Project link",
@@ -236,10 +285,10 @@
     {
       "slug": "stand-tall",
       "title": "Stand Tall",
-      "category": "Brand & Visuals",
-      "summary": "Artwork for event at STUK",
+      "category": "02 / Brand & Visuals",
+      "summary": "Designed the artwork for Stand Tall at STUK Leuven, an intimate, soundsystem-driven dance experience. The resulting style is warm and clean, filled with playful graphic elements.",
       "role": "Digital & Graphic Designer",
-      "year": "2018-2019",
+      "year": "206",
       "link": "",
       "tools": [
         "Photoshop",
@@ -257,7 +306,7 @@
       "sections": [
         {
           "title": "Overview",
-          "content": "Artwork for event at STUK"
+          "content": "Designed the artwork for Stand Tall at STUK Leuven, an intimate, soundsystem-driven dance experience. The resulting style is warm and clean, filled with playful graphic elements."
         },
         {
           "title": "Role",
@@ -265,7 +314,7 @@
         },
         {
           "title": "Year",
-          "content": "2018-2019"
+          "content": "206"
         },
         {
           "title": "Project link",
@@ -276,10 +325,10 @@
     {
       "slug": "digital-illustrations",
       "title": "Digital Illustrations",
-      "category": "Fine Art",
-      "summary": "A collection of digital illustrations",
+      "category": "03 / Fine Art",
+      "summary": "A selection of digital illustrations and drawings inspired by classic cartoons and comic books. Each piece features vibrant, high-contrast color palettes.",
       "role": "Digital Artist",
-      "year": "2023",
+      "year": "",
       "link": "",
       "tools": [
         "Wacom",
@@ -298,7 +347,7 @@
       "sections": [
         {
           "title": "Overview",
-          "content": "A collection of digital illustrations"
+          "content": "A selection of digital illustrations and drawings inspired by classic cartoons and comic books. Each piece features vibrant, high-contrast color palettes."
         },
         {
           "title": "Role",
@@ -306,7 +355,7 @@
         },
         {
           "title": "Year",
-          "content": "2023"
+          "content": ""
         },
         {
           "title": "Project link",
@@ -317,10 +366,10 @@
     {
       "slug": "watercolor",
       "title": "Watercolor",
-      "category": "Fine Art",
-      "summary": "A collection of water paintings",
+      "category": "03 / Fine Art",
+      "summary": "Explorations in watercolor technique on paper. These landscape scenes are directly inspired by real-world locations visited during my travels.",
       "role": "Painter",
-      "year": "2024",
+      "year": "",
       "link": "",
       "tools": [
         "Brushes",
@@ -339,7 +388,7 @@
       "sections": [
         {
           "title": "Overview",
-          "content": "A collection of water paintings"
+          "content": "Explorations in watercolor technique on paper. These landscape scenes are directly inspired by real-world locations visited during my travels."
         },
         {
           "title": "Role",
@@ -347,7 +396,7 @@
         },
         {
           "title": "Year",
-          "content": "2024"
+          "content": ""
         },
         {
           "title": "Project link",
@@ -358,10 +407,10 @@
     {
       "slug": "paintings",
       "title": "Paintings",
-      "category": "Fine Art",
-      "summary": "A collection of Acrylic Painings",
+      "category": "03 / Fine Art",
+      "summary": "Acrylic paintings on canvas featuring references to nature and dreamlike scenes. These pieces experiment with color, shape, and shadow to form dynamic compositions.",
       "role": "Painter",
-      "year": "2025",
+      "year": "",
       "link": "",
       "tools": [
         "Brushes",
@@ -380,52 +429,11 @@
       "sections": [
         {
           "title": "Overview",
-          "content": "A collection of Acrylic Painings"
+          "content": "Acrylic paintings on canvas featuring references to nature and dreamlike scenes. These pieces experiment with color, shape, and shadow to form dynamic compositions."
         },
         {
           "title": "Role",
           "content": "Painter"
-        },
-        {
-          "title": "Year",
-          "content": "2025"
-        },
-        {
-          "title": "Project link",
-          "content": "Link coming soon."
-        }
-      ]
-    },
-    {
-      "slug": "graphic-novel",
-      "title": "Graphic Novel",
-      "category": "Fine Art",
-      "summary": "A Graphic Novel about Halong Bay",
-      "role": "Graphic Novelist",
-      "year": "",
-      "link": "",
-      "tools": [
-        "Sketches",
-        "Digital Coloring",
-        "Pen",
-        "Paper"
-      ],
-      "images": [
-        "https://d4dev.be/Images/Halong_img_1.png",
-        "https://d4dev.be/Images/Halong_img_2.png",
-        "https://d4dev.be/Images/Halong_img_3.png",
-        "https://d4dev.be/Images/Halong_img_4.png"
-      ],
-      "cardImage": "https://d4dev.be/Images/Halong_Thumbnail.png",
-      "coverImage": "https://d4dev.be/Images/Halong_Thumbnail_2.png",
-      "sections": [
-        {
-          "title": "Overview",
-          "content": "A Graphic Novel about Halong Bay"
-        },
-        {
-          "title": "Role",
-          "content": "Graphic Novelist"
         },
         {
           "title": "Year",

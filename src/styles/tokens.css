@@ -8,6 +8,8 @@
   --color-content-low-emphasis: #B5B5B2;
   --color-brand-primary: #222222;
   --color-brand-secondary: #D9D9D6;
+  --color-gradient-dark: linear-gradient(135deg, #3d3d3d 0%, #1a1a1a 100%);
+  --color-gradient-light: linear-gradient(170deg, #F7F7F5 0%, #E5E5E1 100%);
 
   /* Alias to the existing component variables */
   --color-bg: var(--color-surface-main);
@@ -17,6 +19,7 @@
   --color-muted: var(--color-content-low-emphasis);
   --color-accent: var(--color-brand-primary);
   --color-accent-strong: var(--color-brand-secondary);
+  
 
   /* Typography tokens */
   --font-sans: 'Montserrat', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -28,19 +31,21 @@
   --font-desktop-h1-letter-spacing: -0.02em;
   --font-desktop-h2-size: 2.25rem;
   --font-desktop-h2-line-height: 1.1;
-  --font-desktop-h2-weight: 600;
+  --font-desktop-h2-weight: 300;
   --font-desktop-h3-size: 1.5rem;
   --font-desktop-h3-line-height: 1.25;
   --font-desktop-h3-weight: 600;
   --font-desktop-p-size: 1rem;
   --font-desktop-p-line-height: 1.7;
+  --font-desktop-p-weight: 400;
   --font-desktop-caption-size: 0.875rem;
   --font-desktop-caption-line-height: 1.5;
-  --font-desktop-label-size: 0.875rem;
+  --font-desktop-label-size: 0.75rem;
   --font-desktop-label-line-height: 1.4;
+  --font-desktop-label-weight: 600;
   --font-desktop-link-size: 1rem;
   --font-desktop-link-line-height: 1.5;
-  --font-desktop-technical-size: 0.875rem;
+  --font-desktop-technical-size: 0.75rem;
   --font-desktop-technical-line-height: 1.4;
   --font-mobile-h1-size: 2.25rem;
   --font-mobile-h1-line-height: 1.1;

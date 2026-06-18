@@ -1,16 +1,40 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { content } from '../../data/content';
 
 export function SiteHeader() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navLinks = [
+    { label: 'Home', to: '/' },
+    { label: 'About', to: '/about' },
+    // { label: 'Contact', to: '/about' },
+  ];
+
   return (
     <header className="site-header">
-      <Link to="/" className="logo">
-        {content.brand.name}
+      <Link to="/" className="site-brand">
+        Arne Defoor
       </Link>
-      <nav className="site-nav" aria-label="Main navigation">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects/project-1">Project</Link>
+
+      <button
+        type="button"
+        className={`menu-toggle${isMenuOpen ? ' is-open' : ''}`}
+        aria-label="Toggle navigation"
+        aria-expanded={isMenuOpen}
+        onClick={() => setIsMenuOpen((value) => !value)}
+      >
+        <span className="menu-toggle-line" />
+        <span className="menu-toggle-line" />
+        <span className="menu-toggle-line" />
+      </button>
+
+      <nav className={`site-nav${isMenuOpen ? ' is-open' : ''}`} aria-label="Main navigation">
+        {navLinks.map((link) => (
+          <Link key={link.label} to={link.to} className="site-nav-link" onClick={() => setIsMenuOpen(false)}>
+            {link.label}
+          </Link>
+        ))}
       </nav>
     </header>
   );
