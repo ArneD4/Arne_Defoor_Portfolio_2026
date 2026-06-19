@@ -4,13 +4,71 @@ import { content } from '../../data/content';
 import { ArrowRightIcon } from '../icons/ArrowRightIcon';
 import { Button } from '../ui/Button';
 import { ChevronRightIcon } from '../icons/ChevronRightIcon';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger"; // 1. Import ScrollTrigger
+import { useGSAP } from "@gsap/react"; 
+
+// 2. Register ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
 
 export function ProjectShowcaseSection() {
+  const containerRef = useRef<HTMLElement>(null);
+
+  useGSAP(() => {
+    // Nav Animation
+    const tl = gsap.timeline({
+      defaults: { 
+        ease: "power3.out",
+        duration: 0.8
+      }
+    }); 
+    
+    tl.from(".project-floating-nav", {
+      y: 30,
+      opacity: 0,
+      delay: 0.5 // Reduced delay slightly so users don't wait too long
+    });
+
+    // 3. ScrollTrigger Animation for Project Cards
+    // We query the category groups within our scoped containerRef
+    const groups = gsap.utils.toArray<HTMLElement>('.project-category-group');
+
+    groups.forEach((group) => {
+      // Find the specific cards belonging ONLY to this category group
+      const cards = group.querySelectorAll('.project-card');
+      const heading = group.querySelector('h2');
+
+      if (cards.length === 0) return;
+
+      // Create a timeline per group triggered by scrolling
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: group,
+          start: "top 80%", // Triggers when the top of the group hits 80% from the top of the viewport
+          toggleActions: "play none none none" // Plays once when entering
+        }
+      })
+      .from(heading, {
+        opacity: 0,
+        x: -20,
+        duration: 0.6,
+        ease: "power2.out"
+      })
+      .from(cards, {
+        opacity: 0,
+        y: 50,
+        duration: 0.8,
+        ease: "power3.out",
+        stagger: 0.15 // Staggers the appearance of each card in the grid
+      }, "-=0.4"); // Starts the card animation slightly before the heading completely finishes
+    });
+
+  }, { scope: containerRef });
+
+  // ... (Your data structures and onClick handlers remain identical)
   const groupedProjects = content.projects.reduce<Record<string, typeof content.projects>>((groups, project) => {
     const category = project.category || 'Projects';
-    if (!groups[category]) {
-      groups[category] = [];
-    }
+    if (!groups[category]) groups[category] = [];
     groups[category].push(project);
     return groups;
   }, {});
@@ -27,12 +85,11 @@ export function ProjectShowcaseSection() {
   const categoryEntries = Object.entries(groupedProjects);
 
   const openFloatingNav = () => {
-    console.log('hi')
     document.querySelector('.project-floating-nav')?.classList.toggle('open');
   };
 
   return (
-    <section className="project-showcase-section">
+    <section className="project-showcase-section" ref={containerRef}>
       <div className="project-floating-nav" role="navigation" aria-label="Project categories" onClick={openFloatingNav}>
         <ChevronRightIcon size={32} className="floating-nav-icon"/>
         {categoryEntries.map(([category]) => (
@@ -70,7 +127,7 @@ export function ProjectShowcaseSection() {
 
                     <div className="project-card-content">
                       <div className="project-card-tags">
-                        {tags.slice(0, tags.length).map((tag) => (
+                        {tags.map((tag) => (
                           <span key={tag} className="hero-tag project-card-tag">
                             {tag}
                           </span>
@@ -83,7 +140,7 @@ export function ProjectShowcaseSection() {
                       </div>
 
                       <div className="project-card-actions">
-                        <Button  variant="tertiary">View project</Button>
+                        <Button variant="tertiary">View project</Button>
                       </div>
                     </div>
                   </Link>
