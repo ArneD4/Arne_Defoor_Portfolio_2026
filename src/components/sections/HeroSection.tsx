@@ -4,6 +4,8 @@ import { LinkedInIcon } from '../icons/LinkedInIcon';
 import { MailIcon } from '../icons/MailIcon';
 import { Button } from '../ui/Button';
 import { TagList } from '../ui/TagList';
+import { Link } from 'react-router-dom';
+import { ArrowRightIcon } from '../icons/ArrowRightIcon';
 
 export function HeroSection() {
   return (
@@ -15,12 +17,13 @@ export function HeroSection() {
           <p className="lead">{content.about.focus || content.home.description}</p>
           <TagList items={content.about.tools || []} />
           <div className="hero-actions">
-            <Button to="./src/CV.pdf" variant="primary">
+            <Button to="/CV.pdf" variant="primary">
               DOWNLOAD CV
             </Button>
-            <Button to="/about" variant="secondary">
+            <Link to="/about" className="button button-secondary">
               MORE ABOUT ME
-            </Button>
+              <ArrowRightIcon size={20} className="button-icon" />
+            </Link>
           </div>
         </div>
         <div className="hero-social-links" aria-label="Social links">

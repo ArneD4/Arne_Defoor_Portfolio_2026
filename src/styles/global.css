@@ -799,13 +799,34 @@ button, input, textarea, select {
   }
 
 
-  .project-header-content {
-    padding: var(--space-xl) var(--grid-margin);
+
+  .project-header {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
     height: auto;
   }
 
+  .project-header-content {
+    display: contents;
+  }
+
+  .project-header-content-top {
+    display: grid;
+    grid-row: 1;
+    padding: var(--space-xl) var(--grid-margin);
+  }
+
   .project-images-wrapper {
+    display: grid;
     height: auto;
+    grid-row: 2;
+  }
+
+  .related-projects-wrapper {
+    display: grid;
+    grid-row: 3;
+    padding: var(--space-xl) var(--grid-margin);
+    padding-top: 0;
   }
 
   .related-project-card {
