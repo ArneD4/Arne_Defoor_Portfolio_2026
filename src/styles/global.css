@@ -142,8 +142,7 @@ button, input, textarea, select {
 .site-footer {
   display: grid;
   gap: var(--space-4);
-  padding: var(--space-lg) var(--grid-margin);
-  padding-top: var(--space-13);
+  padding: var(--space-13) var(--grid-margin);
   margin-top: var(--space-13);
 }
 
@@ -262,7 +261,7 @@ button, input, textarea, select {
 
 
 .hero-panel {
-  height: 700px;
+  /* height: 700px; */
   align-items: flex-start;
   padding: var(--space-lg) 0;
 }
@@ -280,21 +279,28 @@ button, input, textarea, select {
 }
 
 .hero-blob-container {
+  position: relative;
   width: 100%;
   height: 100%;
+  min-height: clamp(520px, 68vh, 820px);
   pointer-events: auto; /* Re-enables hover events strictly for the 3D canvas */
 }
 
 .project-pinpoint-wrapper {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  z-index: 20;
   opacity: 1;
-  transform: scale(1);
-  transform-origin: top left; /* Aligns the scale point with your SVG line anchor */
+  transform: translateX(-50%) scale(1);
+  transform-origin: top center;
   transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  pointer-events: auto;
 }
 
 .project-pinpoint-wrapper.is-changing {
   opacity: 0;
-  transform: scale(0.3);
+  transform: translateX(-50%) scale(0.3);
 }
 
 /* Three.js Pinpoint Overlay Element Stylings */
@@ -304,6 +310,7 @@ button, input, textarea, select {
   padding:var(--space-sm);
   border: 1px solid rgba(255, 255, 255, 0.24);
   border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(18px) saturate(140%);
   -webkit-backdrop-filter: blur(18px) saturate(140%);
   box-shadow: 0 12px 40px rgba(15, 23, 42, 0.12);
@@ -814,7 +821,7 @@ button, input, textarea, select {
   .hero-3d-overlay-wrapper {
     position: relative;
     width: 100%;
-    height: 350px; 
+    height: clamp(420px, 55vh, 640px); 
     margin-bottom: 2rem; 
     order: -1; 
   }

@@ -7,7 +7,7 @@
     "subtitle": "Selected work",
     "heading": "Creative Developer & Designer",
     "description": "Bridging the gap between aesthetic UX/UI design and robust technical development.",
-    "heroImage": "/src/images/Skors_Thumbnail_2.png"
+    "heroImage": "/images/Skors_Thumbnail_2.png"
   },
   "about": {
     "heading": "About me",
@@ -33,7 +33,7 @@
         "institution": "INTEC",
         "degree": "Front End-Development",
         "focus": "HTML, CSS, Javascript, React, PHP, MySQL",
-        "years": "2020-2012",
+        "years": "2020-2021",
         "institutionUrl": "https://www.intecbrussel.be/"
       },
       {
@@ -98,12 +98,12 @@
         "GSAP"
       ],
       "images": [
-        "/src/images/Skors_img_1.png",
-        "/src/images/Skors_img_2.png",
-        "/src/images/Skors_img_3.png?v=2"
+        "/images/Skors_img_1.png",
+        "/images/Skors_img_2.png",
+        "/images/Skors_img_3.png?v=2"
       ],
-      "cardImage": "/src/images/Skors_Thumbnail.png",
-      "coverImage": "/src/images/Skors_Thumbnail_2.png",
+      "cardImage": "/images/Skors_Thumbnail.png",
+      "coverImage": "/images/Skors_Thumbnail_2.png",
       "sections": [
         {
           "title": "Overview",
@@ -137,12 +137,12 @@
         "Figma AI"
       ],
       "images": [
-        "/src/images/MTB_img_1.png",
-        "/src/images/MTB_img_2.png",
-        "/src/images/MTB_img_3.png"
+        "/images/MTB_img_1.png",
+        "/images/MTB_img_2.png",
+        "/images/MTB_img_3.png"
       ],
-      "cardImage": "/src/images/MTB_Thumbnail.png",
-      "coverImage": "/src/images/MTB_Thumbnail_2.png",
+      "cardImage": "/images/MTB_Thumbnail.png",
+      "coverImage": "/images/MTB_Thumbnail_2.png",
       "sections": [
         {
           "title": "Overview",
@@ -177,12 +177,12 @@
         "PHP"
       ],
       "images": [
-        "/src/images/D4Dev_img_1.png",
-        "/src/images/arnedefoor_img_2.png",
-        "/src/images/D4Dev_img_3.png"
+        "/images/D4Dev_img_1.png",
+        "/images/arnedefoor_img_2.png",
+        "/images/D4Dev_img_3.png"
       ],
-      "cardImage": "/src/images/D4Dev_Thumbnail.png",
-      "coverImage": "/src/images/D4Dev_Thumbnail_2.png",
+      "cardImage": "/images/D4Dev_Thumbnail.png",
+      "coverImage": "/images/D4Dev_Thumbnail_2.png",
       "sections": [
         {
           "title": "Overview",
@@ -217,12 +217,12 @@
         "Figma"
       ],
       "images": [
-        "/src/images/Lavadub_img_1.png",
-        "/src/images/Lavadub_img_2.png",
-        "/src/images/Lavadub_img_3.png"
+        "/images/Lavadub_img_1.png",
+        "/images/Lavadub_img_2.png",
+        "/images/Lavadub_img_3.png"
       ],
-      "cardImage": "/src/images/Lavadub_Thumbnail.png",
-      "coverImage": "/src/images/Lavadub_Thumbnail_2.png",
+      "cardImage": "/images/Lavadub_Thumbnail.png",
+      "coverImage": "/images/Lavadub_Thumbnail_2.png",
       "sections": [
         {
           "title": "Overview",
@@ -257,12 +257,12 @@
         "Figma"
       ],
       "images": [
-        "/src/images/Jamrock_img_1.png",
-        "/src/images/Jamrock_img_2.png",
-        "/src/images/Jamrock_img_3.png"
+        "/images/Jamrock_img_1.png",
+        "/images/Jamrock_img_2.png",
+        "/images/Jamrock_img_3.png"
       ],
-      "cardImage": "/src/images/Jamrock_Thumbnail.png",
-      "coverImage": "/src/images/Jamrock_Thumbnail_2.png",
+      "cardImage": "/images/Jamrock_Thumbnail.png",
+      "coverImage": "/images/Jamrock_Thumbnail_2.png",
       "sections": [
         {
           "title": "Overview",
@@ -297,12 +297,12 @@
         "Figma"
       ],
       "images": [
-        "/src/images/Standtall_img_1.png",
-        "/src/images/Standtall_img_2.png",
-        "/src/images/Standtall_img_3.png"
+        "/images/Standtall_img_1.png",
+        "/images/Standtall_img_2.png",
+        "/images/Standtall_img_3.png"
       ],
-      "cardImage": "/src/images/Standtall_Thumbnail.png",
-      "coverImage": "/src/images/Standtall_Thumbnail_2.png",
+      "cardImage": "/images/Standtall_Thumbnail.png",
+      "coverImage": "/images/Standtall_Thumbnail_2.png",
       "sections": [
         {
           "title": "Overview",
@@ -336,14 +336,14 @@
         "Illustrator"
       ],
       "images": [
-        "/src/images/Digital_img_1.png",
-        "/src/images/Digital_img_2.png",
-        "/src/images/Digital_img_3.png",
-        "/src/images/Digital_img_4.png",
-        "/src/images/Digital_img_5.png"
+        "/images/Digital_img_1.png",
+        "/images/Digital_img_2.png",
+        "/images/Digital_img_3.png",
+        "/images/Digital_img_4.png",
+        "/images/Digital_img_5.png"
       ],
-      "cardImage": "/src/images/Digital_Thumbnail.png",
-      "coverImage": "/src/images/Digital_Thumbnail_2.png",
+      "cardImage": "/images/Digital_Thumbnail.png",
+      "coverImage": "/images/Digital_Thumbnail_2.png",
       "sections": [
         {
           "title": "Overview",
@@ -377,14 +377,14 @@
         "Paper"
       ],
       "images": [
-        "/src/images/Watercolor_img_1.png",
-        "/src/images/Watercolor_img_2.png",
-        "/src/images/Watercolor_img_3.png",
-        "/src/images/Watercolor_img_4.png",
-        "/src/images/Watercolor_img_5.png"
+        "/images/Watercolor_img_1.png",
+        "/images/Watercolor_img_2.png",
+        "/images/Watercolor_img_3.png",
+        "/images/Watercolor_img_4.png",
+        "/images/Watercolor_img_5.png"
       ],
-      "cardImage": "/src/images/Watercolor_Thumbnail.png",
-      "coverImage": "/src/images/Watercolor_Thumbnail_2.png",
+      "cardImage": "/images/Watercolor_Thumbnail.png",
+      "coverImage": "/images/Watercolor_Thumbnail_2.png",
       "sections": [
         {
           "title": "Overview",
@@ -418,14 +418,14 @@
         "Canvas"
       ],
       "images": [
-        "/src/images/Painting_img_1.png",
-        "/src/images/Painting_img_2.png",
-        "/src/images/Painting_img_3.png",
-        "/src/images/Painting_img_4.png",
-        "/src/images/Painting_img_5.png"
+        "/images/Painting_img_1.png",
+        "/images/Painting_img_2.png",
+        "/images/Painting_img_3.png",
+        "/images/Painting_img_4.png",
+        "/images/Painting_img_5.png"
       ],
-      "cardImage": "/src/images/Painting_Thumbnail.png",
-      "coverImage": "/src/images/Painting_Thumbnail_2.png",
+      "cardImage": "/images/Painting_Thumbnail.png",
+      "coverImage": "/images/Painting_Thumbnail_2.png",
       "sections": [
         {
           "title": "Overview",

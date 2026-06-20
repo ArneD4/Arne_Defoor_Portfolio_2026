@@ -41,8 +41,11 @@ export function SiteFooter() {
 
   return (
     <footer className="site-footer" ref={containerRef}>
-      <a className="site-footer-email" href="mailto:hello@arne.dev">
+      {/* <a className="site-footer-email" href="mailto:hello@arne.dev">
         <h2>hello@arne.dev</h2>
+      </a> */}
+      <a className="site-footer-email">
+        <h2>That's all!</h2>
       </a>
 
       <div className="site-footer-links" aria-label="Social links">

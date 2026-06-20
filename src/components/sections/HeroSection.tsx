@@ -94,9 +94,9 @@ export function HeroSection() {
           <a href="https://www.linkedin.com/in/arne-defoor-62088a169/" target="_blank" rel="noreferrer" className="site-icon-link" aria-label="LinkedIn">
             <LinkedInIcon size={24} />
           </a>
-          <a href="mailto:hello@arnedefoor.com" className="hero-social-link site-icon-link" aria-label="Email">
+          {/* <a href="mailto:hello@arnedefoor.com" className="hero-social-link site-icon-link" aria-label="Email">
             <MailIcon size={24} />
-          </a>
+          </a> */}
         </div>
       </div>
 

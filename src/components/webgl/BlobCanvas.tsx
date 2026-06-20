@@ -1,6 +1,7 @@
 import { useRef, useState, useMemo, Suspense, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { Html, useTexture } from "@react-three/drei";
+import { useTexture } from "@react-three/drei";
 import * as THREE from "three";
 import { ArrowRightIcon } from "../icons/ArrowRightIcon";
 
@@ -8,6 +9,7 @@ interface Project {
   title: string;
   images?: string[]; 
   link?: string;
+  slug? : string;
 }
 
 interface BlobCanvasProps {
@@ -142,40 +144,6 @@ function BlobMesh({ project, isChanging }: { project: Project | null; isChanging
         transparent={true}
         side={THREE.DoubleSide}
       />
-
-      <Html
-        position={isMobile ? [-0.45, 0.45, 0.1] : [0.2, 0.55, 0]}
-        center
-        distanceFactor={6}
-        className="pointer-events-none"
-      >
-        {/* CSS transition hooks are completely mirrored with WebGL states here */}
-        <div className={`project-pinpoint-wrapper ${isChanging ? "is-changing" : ""}`}>
-          <svg className="pinpoint-svg-line" width="120" height="120" viewBox="0 0 120 120">
-            <line 
-              x1="120" y1="0" 
-              x2="20" y2="100" 
-              className={`pinpoint-line-path ${hovered ? "is-hovered" : ""}`}
-            />
-            <circle cx="120" cy="0" r="3" className="pinpoint-dot" />
-          </svg>
-
-          <div className={`project-pinpoint ${hovered ? "is-hovered" : ""}`}>
-            <h2 className="pinpoint-title">{project?.title || "Project Name"}</h2>
-            <a
-              href={
-                project?.title
-                  ? `./projects/${project.title.toLowerCase().replace(/\s+/g, "-")}`
-                  : "#"
-              }
-              className="pinpoint-link button button-secondary"
-            >
-              View Project
-              <ArrowRightIcon size={16}></ArrowRightIcon>
-            </a>
-          </div>
-        </div>
-      </Html>
     </mesh>
   );
 }
@@ -237,6 +205,19 @@ export function BlobCanvas({ projects }: BlobCanvasProps) {
           />
         </Suspense>
       </Canvas>
+
+      <div className={`project-pinpoint-wrapper ${isChanging ? "is-changing" : ""}`}>
+        <div className="project-pinpoint">
+          <h2 className="pinpoint-title">{currentProject?.title || "Project Name"}</h2>
+          <Link
+            to={currentProject?.slug ? `./projects/${currentProject.slug}` : "#"}
+            className="pinpoint-link button button-secondary"
+          >
+            View Project
+            <ArrowRightIcon size={16} />
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
