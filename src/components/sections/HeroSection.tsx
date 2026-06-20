@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRightIcon } from '../icons/ArrowRightIcon';
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+import { BlobCanvas } from "../webgl/BlobCanvas"
 
 export function HeroSection() {
   const containerRef = useRef(null);
@@ -47,7 +48,7 @@ export function HeroSection() {
       y: 20,
       opacity: 0,
     }, "-=0.5")
-    .from(".hero-social-link", {
+    .from(".site-icon-link", {
       x: -20,
       opacity: 0,
       stagger: 0.1
@@ -58,6 +59,8 @@ export function HeroSection() {
   return (
     // Attach the ref to your top-level element
     <section className="hero-panel" ref={containerRef}>
+
+
       <div className="hero-content">
         <div className="hero-copy">
           <h2 className="eyebrow">Arne Defoor</h2>
@@ -79,19 +82,28 @@ export function HeroSection() {
             </Link>
           </div>
         </div>
+
+              <div className="hero-3d-overlay-wrapper">
+        <BlobCanvas projects={content?.projects || []} />
+      </div>
         
         <div className="hero-social-links" aria-label="Social links">
-          <a href="https://github.com/ArneD4" target="_blank" rel="noreferrer" className="hero-social-link" aria-label="GitHub">
+          <a href="https://github.com/ArneD4" target="_blank" rel="noreferrer" className="site-icon-link" aria-label="GitHub">
             <GithubIcon size={24} />
           </a>
-          <a href="https://www.linkedin.com/in/arne-defoor-62088a169/" target="_blank" rel="noreferrer" className="hero-social-link" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/arne-defoor-62088a169/" target="_blank" rel="noreferrer" className="site-icon-link" aria-label="LinkedIn">
             <LinkedInIcon size={24} />
           </a>
-          <a href="mailto:hello@arnedefoor.com" className="hero-social-link" aria-label="Email">
+          <a href="mailto:hello@arnedefoor.com" className="hero-social-link site-icon-link" aria-label="Email">
             <MailIcon size={24} />
           </a>
         </div>
       </div>
+
+            {/* 3D Visual Canvas - Isolated from the text layout flow 
+        Pass your data array safely using optional chaining
+      */}
+
     </section>
   );
 }

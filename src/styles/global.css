@@ -130,13 +130,13 @@ button, input, textarea, select {
   font-weight: 600;
   letter-spacing: 0.16em;
   color: var(--color-content-high-emphasis);
-  transition: color 480ms ease, text-shadow 480ms ease;
+  transition: color 280ms ease, text-shadow 280ms ease;
 }
 
 .site-brand:hover{
   color: var(--color-brand-primary);
-  text-shadow: 0 0 4px var(--color-content-medium-emphasis);
-  transition: color 480ms ease, text-shadow 480ms ease;
+  text-shadow: 0 0 4px var(--color-content-low-emphasis);
+  transition: color 280ms ease, text-shadow 280ms ease;
 }
 
 .site-footer {
@@ -155,17 +155,6 @@ button, input, textarea, select {
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-.site-footer-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  background: var(--color-brand-primary);
-  color: var(--color-surface-main);
 }
 
 .site-footer-copyright {
@@ -199,12 +188,12 @@ button, input, textarea, select {
   width: 0%;
   height: 1.5px;
   background: var(--color-content-low-emphasis);
-  transition: width 480ms ease-out;
+  transition: width 280ms ease-out;
 }
 
 .site-nav-link:hover::after {
   width: 100%;
-  transition: width 480ms ease-in;
+  transition: width 280ms ease-in;
 }
 
 
@@ -278,6 +267,70 @@ button, input, textarea, select {
   padding: var(--space-lg) 0;
 }
 
+/* Position the 3D element completely separate from the layout document flow */
+.hero-3d-overlay-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%; /* Adjust to determine how much of the right side it occupies */
+  height: 100%;
+  z-index: 1; 
+  pointer-events: none; /* Allows mouse interactions to pass right through to background layers if needed */
+  overflow: visible!important
+}
+
+.hero-blob-container {
+  width: 100%;
+  height: 100%;
+  pointer-events: auto; /* Re-enables hover events strictly for the 3D canvas */
+}
+
+.project-pinpoint-wrapper {
+  opacity: 1;
+  transform: scale(1);
+  transform-origin: top left; /* Aligns the scale point with your SVG line anchor */
+  transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.project-pinpoint-wrapper.is-changing {
+  opacity: 0;
+  transform: scale(0.3);
+}
+
+/* Three.js Pinpoint Overlay Element Stylings */
+.project-pinpoint {
+  display: grid;
+  gap: var(--space-xs);
+  padding:var(--space-sm);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 4px;
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.12);
+  white-space: nowrap;
+  pointer-events: auto; /* Vital: allows users to click the hyperlink */
+  transform: translate(10px, 10px);
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.project-pinpoint.is-hovered {
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translate(15px, 15px) scale(1.05);
+}
+
+.pinpoint-title {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.pinpoint-link {
+  color: var(--color-content-high-emphasis)!important;
+  font-size: 0.5rem!important;
+}
+
+
 .hero-content {
   width: 100%;
   gap: var(--space-sm);
@@ -316,16 +369,6 @@ button, input, textarea, select {
   }
 }
 
-.hero-social-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  background: var(--color-brand-primary);
-  color: var(--color-surface-main);
-}
 
 .hero-image {
   width: 100%;
@@ -389,12 +432,12 @@ button, input, textarea, select {
 }
 
 .button svg{
-  transition: margin-left 480ms ease-out;
+  transition: margin-left 280ms ease-out;
 }
 
 .button:hover svg{
   margin-left: 4px;
-  transition: margin-left 480ms ease-in;
+  transition: margin-left 280ms ease-in;
 }
 
 .button-secondary {
@@ -420,6 +463,24 @@ button, input, textarea, select {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+.site-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: var(--color-brand-primary);
+  color: var(--color-surface-main);
+  transition: color 280ms ease-in-out, background-color 280ms ease-in-out;
+}
+
+.site-icon-link:hover {
+  background-color: var(--color-brand-secondary);
+  color: var(--color-high-emphasis);
+  transition: color 280ms ease-in-out, background-color 280ms ease-in-out;
 }
 
 .section-image{
@@ -458,7 +519,9 @@ button, input, textarea, select {
   z-index: 1000;
 }
 
-
+.floating-nav-icon {
+  display: none;
+}
 
 .project-category-groups {
   display: grid;
@@ -633,6 +696,7 @@ button, input, textarea, select {
   width: 180px;
   min-height: 220px;
   align-content: start;
+  margin-bottom: var(--space-md)
 }
 
 .about-card-label {
@@ -738,12 +802,34 @@ button, input, textarea, select {
   }
 
   .floating-nav-icon {
+    display: block;
     transform: rotate(270deg);
     margin: auto;
   }
 
   .project-floating-nav .button{
     width: 100%;
+  }
+
+  .hero-3d-overlay-wrapper {
+    position: relative;
+    width: 100%;
+    height: 350px; 
+    margin-bottom: 2rem; 
+    order: -1; 
+  }
+
+  /* Make the pinpoint text slightly smaller for smaller screens */
+  .project-pinpoint {
+    padding: 8px 12px;
+  }
+  
+  .pinpoint-title {
+    font-size: 0.75rem;
+  }
+  
+  .pinpoint-link {
+    font-size: 0.7rem;
   }
 }
 
@@ -837,6 +923,8 @@ button, input, textarea, select {
   .related-project-card {
     max-width: 100%;
   }
+
+
   
 
 }

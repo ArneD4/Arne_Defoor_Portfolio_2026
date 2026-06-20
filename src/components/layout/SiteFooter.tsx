@@ -31,7 +31,7 @@ export function SiteFooter() {
       y: 40,
       opacity: 0,
     }, "-=0.6") // Starts 0.6s before the previous animation ends
-    .from(".site-footer-links .site-footer-icon", { 
+    .from(".site-footer-links a", { 
       x: -20,
       opacity: 0,
       stagger: 0.06
@@ -46,10 +46,10 @@ export function SiteFooter() {
       </a>
 
       <div className="site-footer-links" aria-label="Social links">
-        <a className="site-footer-icon" href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+        <a className="site-icon-link" href="https://www.linkedin.com/in/arne-defoor-62088a169/" target="_blank" rel="noreferrer">
           <LinkedInIcon size={24} />
         </a>
-        <a className="site-footer-icon" href="https://github.com" target="_blank" rel="noreferrer">
+        <a className="site-icon-link" href="https://github.com/ArneD4" target="_blank" rel="noreferrer">
           <GithubIcon size={24} />
         </a>
       </div>

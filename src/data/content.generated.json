@@ -7,7 +7,7 @@
     "subtitle": "Selected work",
     "heading": "Creative Developer & Designer",
     "description": "Bridging the gap between aesthetic UX/UI design and robust technical development.",
-    "heroImage": "https://arnedefoor.be/Images/Skors_Thumbnail_2.png"
+    "heroImage": "/src/images/Skors_Thumbnail_2.png"
   },
   "about": {
     "heading": "About me",
@@ -98,12 +98,12 @@
         "GSAP"
       ],
       "images": [
-        "https://arnedefoor.be/Images/Skors_img_1.png",
-        "https://arnedefoor.be/Images/Skors_img_2.png",
-        "https://arnedefoor.be/Images/Skors_img_3.png?v=2"
+        "/src/images/Skors_img_1.png",
+        "/src/images/Skors_img_2.png",
+        "/src/images/Skors_img_3.png?v=2"
       ],
-      "cardImage": "https://arnedefoor.be/Images/Skors_Thumbnail.png",
-      "coverImage": "https://arnedefoor.be/Images/Skors_Thumbnail_2.png",
+      "cardImage": "/src/images/Skors_Thumbnail.png",
+      "coverImage": "/src/images/Skors_Thumbnail_2.png",
       "sections": [
         {
           "title": "Overview",
@@ -137,12 +137,12 @@
         "Figma AI"
       ],
       "images": [
-        "https://arnedefoor.be/Images/MTB_img_1.png",
-        "https://arnedefoor.be/Images/MTB_img_2.png",
-        "https://arnedefoor.be/Images/MTB_img_3.png"
+        "/src/images/MTB_img_1.png",
+        "/src/images/MTB_img_2.png",
+        "/src/images/MTB_img_3.png"
       ],
-      "cardImage": "https://arnedefoor.be/Images/MTB_Thumbnail.png",
-      "coverImage": "https://arnedefoor.be/Images/MTB_Thumbnail_2.png",
+      "cardImage": "/src/images/MTB_Thumbnail.png",
+      "coverImage": "/src/images/MTB_Thumbnail_2.png",
       "sections": [
         {
           "title": "Overview",
@@ -177,12 +177,12 @@
         "PHP"
       ],
       "images": [
-        "https://arnedefoor.be/Images/D4Dev_img_1.png",
-        "https://arnedefoor.be/Images/arnedefoor_img_2.png",
-        "https://arnedefoor.be/Images/D4Dev_img_3.png"
+        "/src/images/D4Dev_img_1.png",
+        "/src/images/arnedefoor_img_2.png",
+        "/src/images/D4Dev_img_3.png"
       ],
-      "cardImage": "https://arnedefoor.be/Images/D4Dev_Thumbnail.png",
-      "coverImage": "https://arnedefoor.be/Images/D4Dev_Thumbnail_2.png",
+      "cardImage": "/src/images/D4Dev_Thumbnail.png",
+      "coverImage": "/src/images/D4Dev_Thumbnail_2.png",
       "sections": [
         {
           "title": "Overview",
@@ -217,12 +217,12 @@
         "Figma"
       ],
       "images": [
-        "https://arnedefoor.be/Images/Lavadub_img_1.png",
-        "https://arnedefoor.be/Images/Lavadub_img_2.png",
-        "https://arnedefoor.be/Images/Lavadub_img_3.png"
+        "/src/images/Lavadub_img_1.png",
+        "/src/images/Lavadub_img_2.png",
+        "/src/images/Lavadub_img_3.png"
       ],
-      "cardImage": "https://arnedefoor.be/Images/Lavadub_Thumbnail.png",
-      "coverImage": "https://arnedefoor.be/Images/Lavadub_Thumbnail_2.png",
+      "cardImage": "/src/images/Lavadub_Thumbnail.png",
+      "coverImage": "/src/images/Lavadub_Thumbnail_2.png",
       "sections": [
         {
           "title": "Overview",
@@ -257,12 +257,12 @@
         "Figma"
       ],
       "images": [
-        "https://arnedefoor.be/Images/Jamrock_img_1.png",
-        "https://arnedefoor.be/Images/Jamrock_img_2.png",
-        "https://arnedefoor.be/Images/Jamrock_img_3.png"
+        "/src/images/Jamrock_img_1.png",
+        "/src/images/Jamrock_img_2.png",
+        "/src/images/Jamrock_img_3.png"
       ],
-      "cardImage": "https://arnedefoor.be/Images/Jamrock_Thumbnail.png",
-      "coverImage": "https://arnedefoor.be/Images/Jamrock_Thumbnail_2.png",
+      "cardImage": "/src/images/Jamrock_Thumbnail.png",
+      "coverImage": "/src/images/Jamrock_Thumbnail_2.png",
       "sections": [
         {
           "title": "Overview",
@@ -297,12 +297,12 @@
         "Figma"
       ],
       "images": [
-        "https://arnedefoor.be/Images/Standtall_img_1.png",
-        "https://arnedefoor.be/Images/Standtall_img_2.png",
-        "https://arnedefoor.be/Images/Standtall_img_3.png"
+        "/src/images/Standtall_img_1.png",
+        "/src/images/Standtall_img_2.png",
+        "/src/images/Standtall_img_3.png"
       ],
-      "cardImage": "https://arnedefoor.be/Images/Standtall_Thumbnail.png",
-      "coverImage": "https://arnedefoor.be/Images/Standtall_Thumbnail_2.png",
+      "cardImage": "/src/images/Standtall_Thumbnail.png",
+      "coverImage": "/src/images/Standtall_Thumbnail_2.png",
       "sections": [
         {
           "title": "Overview",
@@ -336,14 +336,14 @@
         "Illustrator"
       ],
       "images": [
-        "https://arnedefoor.be/Images/Digital_img_1.png",
-        "https://arnedefoor.be/Images/Digital_img_2.png",
-        "https://arnedefoor.be/Images/Digital_img_3.png",
-        "https://arnedefoor.be/Images/Digital_img_4.png",
-        "https://arnedefoor.be/Images/Digital_img_5.png"
+        "/src/images/Digital_img_1.png",
+        "/src/images/Digital_img_2.png",
+        "/src/images/Digital_img_3.png",
+        "/src/images/Digital_img_4.png",
+        "/src/images/Digital_img_5.png"
       ],
-      "cardImage": "https://arnedefoor.be/Images/Digital_Thumbnail.png",
-      "coverImage": "https://arnedefoor.be/Images/Digital_Thumbnail_2.png",
+      "cardImage": "/src/images/Digital_Thumbnail.png",
+      "coverImage": "/src/images/Digital_Thumbnail_2.png",
       "sections": [
         {
           "title": "Overview",
@@ -377,14 +377,14 @@
         "Paper"
       ],
       "images": [
-        "https://arnedefoor.be/Images/Watercolor_img_1.png",
-        "https://arnedefoor.be/Images/Watercolor_img_2.png",
-        "https://arnedefoor.be/Images/Watercolor_img_3.png",
-        "https://arnedefoor.be/Images/Watercolor_img_4.png",
-        "https://arnedefoor.be/Images/Watercolor_img_5.png"
+        "/src/images/Watercolor_img_1.png",
+        "/src/images/Watercolor_img_2.png",
+        "/src/images/Watercolor_img_3.png",
+        "/src/images/Watercolor_img_4.png",
+        "/src/images/Watercolor_img_5.png"
       ],
-      "cardImage": "https://arnedefoor.be/Images/Watercolor_Thumbnail.png",
-      "coverImage": "https://arnedefoor.be/Images/Watercolor_Thumbnail_2.png",
+      "cardImage": "/src/images/Watercolor_Thumbnail.png",
+      "coverImage": "/src/images/Watercolor_Thumbnail_2.png",
       "sections": [
         {
           "title": "Overview",
@@ -418,14 +418,14 @@
         "Canvas"
       ],
       "images": [
-        "https://arnedefoor.be/Images/Painting_img_1.png",
-        "https://arnedefoor.be/Images/Painting_img_2.png",
-        "https://arnedefoor.be/Images/Painting_img_3.png",
-        "https://arnedefoor.be/Images/Painting_img_4.png",
-        "https://arnedefoor.be/Images/Painting_img_5.png"
+        "/src/images/Painting_img_1.png",
+        "/src/images/Painting_img_2.png",
+        "/src/images/Painting_img_3.png",
+        "/src/images/Painting_img_4.png",
+        "/src/images/Painting_img_5.png"
       ],
-      "cardImage": "https://arnedefoor.be/Images/Painting_Thumbnail.png",
-      "coverImage": "https://arnedefoor.be/Images/Painting_Thumbnail_2.png",
+      "cardImage": "/src/images/Painting_Thumbnail.png",
+      "coverImage": "/src/images/Painting_Thumbnail_2.png",
       "sections": [
         {
           "title": "Overview",
