@@ -210,7 +210,7 @@ export function BlobCanvas({ projects }: BlobCanvasProps) {
         <div className="project-pinpoint">
           <h2 className="pinpoint-title">{currentProject?.title || "Project Name"}</h2>
           <Link
-            to={currentProject?.slug ? `./projects/${currentProject.slug}` : "#"}
+            to={currentProject?.slug ? `?page=projects&slug=${currentProject.slug}` : "#"}
             className="pinpoint-link button button-secondary"
           >
             View Project

@@ -1,0 +1,17 @@
+Options -MultiViews
+
+# Fallback for hosts where rewrite rules are restricted: serve SPA shell on 404.
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+
+	# Let direct file requests pass through.
+	RewriteCond %{REQUEST_FILENAME} -f [OR]
+	RewriteCond %{REQUEST_FILENAME} -d
+	RewriteRule ^ - [L]
+
+	# Send all route requests to the SPA entry.
+	RewriteRule ^ index.html [QSA,L]
+</IfModule>

@@ -119,7 +119,7 @@ export function ProjectShowcaseSection() {
               {projects.map((project) => {
                 const tags = project.tools?.length ? project.tools : [project.category];
                 return (
-                  <Link key={project.slug} to={`/projects/${project.slug}`} className="project-card">
+                  <Link key={project.slug} to={`/?page=projects&slug=${project.slug}`} className="project-card">
                     <div className="project-card-image-wrapper">
                       <img className="project-card-image" src={project.cardImage} alt={project.title} loading="lazy"/>
                       <img className="project-card-image-hover" src={project.coverImage} alt={`${project.title} hover`} loading="lazy"/>

@@ -98,7 +98,7 @@ function toProject(row) {
   const title = row['Project Name']?.trim() || 'Untitled project';
   const description = row['Description']?.trim() || 'A portfolio project.';
   const category = row['Category']?.trim() || 'Featured';
-  const role = row['Role']?.trim() || 'Creative';
+  const role = row['Role']?.trim() || '';
   const year = row['Year']?.trim() || '';
   const link = row['Link']?.trim() || '';
 

@@ -205,7 +205,7 @@
     {
       "slug": "lavadub",
       "title": "LavaDub",
-      "category": "02 / Brand & Visuals",
+      "category": "02 / Graphic Design",
       "summary": "Crafted the visual identity for a Rejoice Soundsystem music event. Serving as an ode to the 90s, the design relies on high contrast, heavy typography, and distilled graphics.",
       "role": "Graphic Designer",
       "year": "2026",
@@ -245,7 +245,7 @@
     {
       "slug": "jamrock",
       "title": "Jamrock",
-      "category": "02 / Brand & Visuals",
+      "category": "02 / Graphic Design",
       "summary": "Developed an event poster for Jamrock Leuven and Kingstep Soundsystem. Inspired by early dancehall prints, it features a text-heavy, blocked style in a bold duotone palette.",
       "role": "Graphic Designer",
       "year": "2026",
@@ -285,7 +285,7 @@
     {
       "slug": "stand-tall",
       "title": "Stand Tall",
-      "category": "02 / Brand & Visuals",
+      "category": "02 / Graphic Design",
       "summary": "Designed the artwork for Stand Tall at STUK Leuven, an intimate, soundsystem-driven dance experience. The resulting style is warm and clean, filled with playful graphic elements.",
       "role": "Digital & Graphic Designer",
       "year": "206",
@@ -325,9 +325,9 @@
     {
       "slug": "digital-illustrations",
       "title": "Digital Illustrations",
-      "category": "03 / Fine Art",
+      "category": "03 / Art",
       "summary": "A selection of digital illustrations and drawings inspired by classic cartoons and comic books. Each piece features vibrant, high-contrast color palettes.",
-      "role": "Digital Artist",
+      "role": "",
       "year": "",
       "link": "",
       "tools": [
@@ -351,7 +351,7 @@
         },
         {
           "title": "Role",
-          "content": "Digital Artist"
+          "content": ""
         },
         {
           "title": "Year",
@@ -366,9 +366,9 @@
     {
       "slug": "watercolor",
       "title": "Watercolor",
-      "category": "03 / Fine Art",
+      "category": "03 / Art",
       "summary": "Explorations in watercolor technique on paper. These landscape scenes are directly inspired by real-world locations visited during my travels.",
-      "role": "Painter",
+      "role": "",
       "year": "",
       "link": "",
       "tools": [
@@ -392,7 +392,7 @@
         },
         {
           "title": "Role",
-          "content": "Painter"
+          "content": ""
         },
         {
           "title": "Year",
@@ -407,9 +407,9 @@
     {
       "slug": "paintings",
       "title": "Paintings",
-      "category": "03 / Fine Art",
+      "category": "03 / Art",
       "summary": "Acrylic paintings on canvas featuring references to nature and dreamlike scenes. These pieces experiment with color, shape, and shadow to form dynamic compositions.",
-      "role": "Painter",
+      "role": "",
       "year": "",
       "link": "",
       "tools": [
@@ -433,7 +433,7 @@
         },
         {
           "title": "Role",
-          "content": "Painter"
+          "content": ""
         },
         {
           "title": "Year",

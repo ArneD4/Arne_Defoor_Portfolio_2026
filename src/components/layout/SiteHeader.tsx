@@ -7,8 +7,8 @@ export function SiteHeader() {
 
   const navLinks = [
     { label: 'Home', to: '/' },
-    { label: 'About', to: '/about' },
-    // { label: 'Contact', to: '/about' },
+    { label: 'About', to: '/?page=about' },
+    // { label: 'Contact', to: '/?page=about' },
   ];
 
   return (

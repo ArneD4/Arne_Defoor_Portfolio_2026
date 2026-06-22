@@ -76,7 +76,7 @@ export function HeroSection() {
             <Button to="/CV.pdf" variant="primary">
               DOWNLOAD CV
             </Button>
-            <Link to="/about" className="button button-secondary">
+            <Link to="/?page=about" className="button button-secondary">
               MORE ABOUT ME
               <ArrowRightIcon size={20} className="button-icon" />
             </Link>
